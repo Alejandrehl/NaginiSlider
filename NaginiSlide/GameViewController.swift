@@ -10,13 +10,14 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    //Variable que almacena el último valor del slider
+    var targetValue : Int = 0;
     var currentValue : Int = 50
     @IBOutlet weak var slider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.currentValue = lroundf(slider.value)
+        self.targetValue = 1 + Int(arc4random_uniform(100))
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -26,7 +27,10 @@ class GameViewController: UIViewController {
     }
 
     @IBAction func showAlert() {
-        let message = "El valor del slider es: \(self.currentValue)"
+        let message = """
+            El valor del slider es: \(self.currentValue)
+            El valor del objetivo es: \(self.targetValue)
+            """
         
         let alert = UIAlertController(
             title: "¡Puntuación!",
