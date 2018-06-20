@@ -16,9 +16,8 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.currentValue = lroundf(slider.value)
-        self.targetValue = 1 + Int(arc4random_uniform(100))
         // Do any additional setup after loading the view, typically from a nib.
+        startNewRound()
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,10 +45,19 @@ class GameViewController: UIViewController {
         
         alert.addAction(action)
         present(alert, animated: true)
+        
+        startNewRound()
     }
     
     @IBAction func sliderMoved(_ sender: UISlider) {
         self.currentValue = lroundf(sender.value)
+    }
+    
+    //Función para iniciar una nueva ronda
+    func startNewRound(){
+        self.targetValue = 1 + Int(arc4random_uniform(100))
+        self.currentValue = 50
+        self.slider.value = Float(self.currentValue)
     }
 }
 
