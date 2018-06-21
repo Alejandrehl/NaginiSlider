@@ -22,8 +22,26 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        setupSlider()
         resetGame()
         updateLabels()
+    }
+    
+    func setupSlider(){
+        let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
+        let thumbImageHighlighted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
+        let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
+        let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
+        
+        self.slider.setThumbImage(thumbImageNormal, for: .normal)
+        self.slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets: insets)
+        let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
+        
+        self.slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
+        self.slider.setMaximumTrackImage(trackRightResizable, for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
