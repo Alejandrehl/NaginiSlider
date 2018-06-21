@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina5_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,11 +16,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="NaginiSlide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="X7P-Sq-Mrn">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                                 <color key="tintColor" red="0.99025344849999997" green="1" blue="0.99044901119999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6W-jB-ShO">
@@ -149,14 +149,14 @@
             <objects>
                 <viewController id="bPu-I4-uPP" customClass="AboutUsViewController" customModule="NaginiSlide" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8b1-BN-W7x">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="R0K-3A-saB">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVI-Ow-n5m">
-                                <rect key="frame" x="283.5" y="318" width="100" height="37"/>
+                                <rect key="frame" x="318" y="357" width="100" height="37"/>
                                 <state key="normal" image="StartOverIcon" backgroundImage="Button-Normal">
                                     <color key="titleColor" red="0.99025344849999997" green="1" blue="0.99044901119999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -165,36 +165,32 @@
                                     <action selector="backToGame" destination="bPu-I4-uPP" eventType="touchUpInside" id="a6d-gH-FNw"/>
                                 </connections>
                             </button>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLm-qK-ww3">
-                                <rect key="frame" x="20" y="8" width="627" height="302"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eNo-j6-hub">
+                                <rect key="frame" x="30" y="87" width="676" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text"> ★★★ Nagini Slide 2018 ★★★  El juego consiste en colocar el slider tan cerca del objetivo como te sea posible. Cuanto más cerca estés, más puntos obtendras!</string>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.99025344850453578" green="1" blue="0.99044901116258377" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="ozi-9a-VHo" firstAttribute="trailing" secondItem="eNo-j6-hub" secondAttribute="trailing" constant="30" id="4p5-ma-Xmb"/>
                             <constraint firstItem="R0K-3A-saB" firstAttribute="centerX" secondItem="8b1-BN-W7x" secondAttribute="centerX" id="6Qz-Z6-nhe"/>
-                            <constraint firstItem="bLm-qK-ww3" firstAttribute="centerX" secondItem="8b1-BN-W7x" secondAttribute="centerX" id="87F-tu-Vm9"/>
                             <constraint firstItem="R0K-3A-saB" firstAttribute="top" secondItem="8b1-BN-W7x" secondAttribute="topMargin" id="8zF-su-JzN"/>
                             <constraint firstItem="R0K-3A-saB" firstAttribute="leading" secondItem="ozi-9a-VHo" secondAttribute="leading" id="A0u-wf-BWD"/>
-                            <constraint firstItem="ZVI-Ow-n5m" firstAttribute="top" secondItem="bLm-qK-ww3" secondAttribute="bottom" constant="8" id="Ed2-27-1Rl"/>
-                            <constraint firstItem="bLm-qK-ww3" firstAttribute="top" secondItem="ozi-9a-VHo" secondAttribute="top" constant="8" id="KzO-gD-KZf"/>
-                            <constraint firstItem="bLm-qK-ww3" firstAttribute="centerY" secondItem="8b1-BN-W7x" secondAttribute="centerY" id="U3Z-xX-S9u"/>
+                            <constraint firstItem="ZVI-Ow-n5m" firstAttribute="top" secondItem="eNo-j6-hub" secondAttribute="bottom" constant="30" id="AA4-K2-fgi"/>
+                            <constraint firstItem="eNo-j6-hub" firstAttribute="centerX" secondItem="8b1-BN-W7x" secondAttribute="centerX" id="SsL-TM-rNp"/>
+                            <constraint firstItem="eNo-j6-hub" firstAttribute="centerY" secondItem="8b1-BN-W7x" secondAttribute="centerY" id="T4j-m2-ARO"/>
                             <constraint firstAttribute="bottom" secondItem="ZVI-Ow-n5m" secondAttribute="bottom" constant="20" id="YlZ-hw-rAH"/>
                             <constraint firstItem="R0K-3A-saB" firstAttribute="centerY" secondItem="8b1-BN-W7x" secondAttribute="centerY" id="Z6V-yP-GFZ"/>
                             <constraint firstItem="ZVI-Ow-n5m" firstAttribute="centerX" secondItem="8b1-BN-W7x" secondAttribute="centerX" id="Zv4-Wt-fKw"/>
-                            <constraint firstItem="ozi-9a-VHo" firstAttribute="trailing" secondItem="bLm-qK-ww3" secondAttribute="trailing" constant="20" id="i3U-CX-DL4"/>
-                            <constraint firstItem="bLm-qK-ww3" firstAttribute="leading" secondItem="ozi-9a-VHo" secondAttribute="leading" constant="20" id="r2V-rf-Q9u"/>
                             <constraint firstItem="ozi-9a-VHo" firstAttribute="trailing" secondItem="R0K-3A-saB" secondAttribute="trailing" id="uPc-q2-mSP"/>
+                            <constraint firstItem="eNo-j6-hub" firstAttribute="leading" secondItem="ozi-9a-VHo" secondAttribute="leading" constant="30" id="vfa-bN-1E9"/>
+                            <constraint firstItem="ZVI-Ow-n5m" firstAttribute="top" secondItem="eNo-j6-hub" secondAttribute="bottom" constant="30" id="yXB-p9-Ib7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ozi-9a-VHo"/>
                     </view>
-                    <connections>
-                        <outlet property="webView" destination="bLm-qK-ww3" id="Vyb-Ez-QsZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IaY-hA-rQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
