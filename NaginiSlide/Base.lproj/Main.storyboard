@@ -152,9 +152,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="R0K-3A-saB">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="R0K-3A-saB">
+                                <rect key="frame" x="44" y="0.0" width="724" height="375.33333333333331"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVI-Ow-n5m">
                                 <rect key="frame" x="291" y="328" width="100" height="37"/>
@@ -183,6 +182,13 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.99025344850453578" green="1" blue="0.99044901116258377" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="R0K-3A-saB" firstAttribute="centerX" secondItem="8b1-BN-W7x" secondAttribute="centerX" id="6Qz-Z6-nhe"/>
+                            <constraint firstItem="R0K-3A-saB" firstAttribute="top" secondItem="8b1-BN-W7x" secondAttribute="topMargin" id="8zF-su-JzN"/>
+                            <constraint firstItem="R0K-3A-saB" firstAttribute="leading" secondItem="ozi-9a-VHo" secondAttribute="leading" id="A0u-wf-BWD"/>
+                            <constraint firstItem="R0K-3A-saB" firstAttribute="centerY" secondItem="8b1-BN-W7x" secondAttribute="centerY" id="Z6V-yP-GFZ"/>
+                            <constraint firstItem="ozi-9a-VHo" firstAttribute="trailing" secondItem="R0K-3A-saB" secondAttribute="trailing" id="uPc-q2-mSP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ozi-9a-VHo"/>
                     </view>
                     <connections>
