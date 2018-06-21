@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A911418220DB266E004A9B8A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A911418120DB266E004A9B8A /* AboutUsViewController.swift */; };
 		A96D0CEF20DB2F2700B916C7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CC9D2020D9A59B00C81F0E /* GameViewController.swift */; };
+		A982C2A120DBF1FB006BA843 /* NaginiSlide.html in Resources */ = {isa = PBXBuildFile; fileRef = A982C2A020DBF1FB006BA843 /* NaginiSlide.html */; };
 		A9CC9D1F20D9A59B00C81F0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CC9D1E20D9A59B00C81F0E /* AppDelegate.swift */; };
 		A9CC9D2420D9A59B00C81F0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CC9D2220D9A59B00C81F0E /* Main.storyboard */; };
 		A9CC9D2620D9A59D00C81F0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CC9D2520D9A59D00C81F0E /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		A911418120DB266E004A9B8A /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		A982C2A020DBF1FB006BA843 /* NaginiSlide.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = NaginiSlide.html; path = ../../NaginiSlide.html; sourceTree = "<group>"; };
 		A9CC9D1B20D9A59B00C81F0E /* NaginiSlide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaginiSlide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CC9D1E20D9A59B00C81F0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9CC9D2020D9A59B00C81F0E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		A9CC9D1D20D9A59B00C81F0E /* NaginiSlide */ = {
 			isa = PBXGroup;
 			children = (
+				A982C2A020DBF1FB006BA843 /* NaginiSlide.html */,
 				A9CC9D1E20D9A59B00C81F0E /* AppDelegate.swift */,
 				A9CC9D2020D9A59B00C81F0E /* GameViewController.swift */,
 				A9CC9D2220D9A59B00C81F0E /* Main.storyboard */,
@@ -127,6 +130,7 @@
 			files = (
 				A9CC9D2920D9A59D00C81F0E /* LaunchScreen.storyboard in Resources */,
 				A9CC9D2620D9A59D00C81F0E /* Assets.xcassets in Resources */,
+				A982C2A120DBF1FB006BA843 /* NaginiSlide.html in Resources */,
 				A9CC9D2420D9A59B00C81F0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

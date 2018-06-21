@@ -158,19 +158,22 @@
                                     <action selector="backToGame" destination="bPu-I4-uPP" eventType="touchUpInside" id="a6d-gH-FNw"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fr3-Td-fUp">
-                                <rect key="frame" x="20" y="20" width="627" height="299"/>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bLm-qK-ww3">
+                                <rect key="frame" x="20" y="20" width="627" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <string key="text">*** Bievenido a Nagini Slide 2018 ***   El juego consiste en colocar el slider tan cerca del objetivo como te sea posible. Cuanto más cerca estés, más puntos obtendras!  ¿A qué esperas para empezar a disfrutar y ganar? </string>
-                                <color key="textColor" red="0.99025344849999997" green="1" blue="0.99044901119999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" red="0.99025344850453578" green="1" blue="0.99044901116258377" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="ozi-9a-VHo"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="bLm-qK-ww3" id="Vyb-Ez-QsZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IaY-hA-rQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
